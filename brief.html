@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIXZOY AGENCY</title>
+    <link rel="stylesheet" href="./css/brief.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="./js/scroll.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="/index.html">
+            <img src="./img/logo.svg" alt="logo" class="header-logo-img">
+            <span class="header-logo-text">
+                <span>MIXZOY</span>  DIGITAL AGENCY
+            </span>
+        </a>
+        <menu class="header-menu">
+            <a href="index.html">О нас</a>
+            <a href="index.html">Услуги</a>
+            <a href="brief.html">Обсудить проект</a>
+        </menu>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">О нас</a></li>
+                <li><a href="index.html">Услуги</a></li>
+                <li><a href="brief.html">Обсудить проект</a></li>
+            </ul>
+        </nav>
+
+        <!-- Иконка бургерменю -->
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+    <section class="brief-container">
+        <span class="header-brief">
+            ОБСУДИТЬ ПРОЕКТ
+        </span>
+        <span class="subheader-brief">
+            Отправка заявки вас ни к чему не обязывает. Созвонимся, проведём консультацию, финальное решение — за вами.
+        </span>
+        <img src="./img/brief-line.svg" alt="" class="brief-line">
+        <form action="telegram.php" method="POST" class="brief-form" >
+            <div class="user-info">
+                <div class="user-info-container">
+                    <span class="user-info-descr">Ваше имя</span>
+                    <input name="user_name" placeholder="Иванов Иван Иванович*" required />
+                </div>
+                <div class="user-info-container">
+                    <span class="user-info-descr">Номер телефона</span>
+                    <input type="tel" name="user_phone" placeholder="+7 (999) 999 99-99*" required />
+                </div>
+                <div class="user-info-container">
+                    <span class="user-info-descr">Эл.Почта</span>
+                    <input type="email" name="user_email" placeholder="mixzoystudio@mail.ru" />
+                </div>
+                <div class="user-info-container">
+                    <span class="user-info-descr">Тип услуги</span>
+                    <div class="select-wrapper">
+                        <select name="usluga" id="" class="select-uslugi">
+                            <option value="Создание сайта">Создание сайта</option>
+                            <option value="Создание презентации">Создание презентации</option>
+                            <option value="Создание баннера">Создание баннера</option>
+                            <option value="Создание логотипа">Создание логотипа</option>
+                            <option value="Создание аватарки">Создание аватарки</option>
+                            <option value="Оформление соц.сетей">Оформление соц.сетей</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="user-info-container">
+                    <span class="user-info-descr">Ваш бюджет</span>
+                    <input name="budget" placeholder="RUB/USD" />
+                </div>
+            </div>
+            <img src="./img/form-line.svg" alt="" class="form-line">
+            <div class="user-task">
+                <div class="user-info-container">
+                    <span class="user-info-descr">Опишите задачу</span>
+                    <textarea name="task-text" id="" cols="30" rows="10" class="textarea-form" placeholder="Например: необходима разработка корпоративного сайта для аграрного завода с дальнейшим продвижением*" required></textarea>
+                </div>
+                <button class="form-btn" type="submit">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer-container">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="./img/footer-logo.svg" alt="logo" class="header-logo-img">
+                <span class="header-logo-text footer-color">
+                    <span>MIXZOY</span>  DIGITAL AGENCY
+                </span>
+            </div>
+            <div class="footer-text">
+                Мы с гордостью заявляем, что уже более года успешно работаем в индустрии дизайна. За это время Mixzoy Studio смогла накопить ценный опыт и установить долгосрочные отношения с нашими доверенными клиентами.
+            </div>
+            <div class="copyright">
+                © 2023 Created by Mixzoystudio
+            </div>
+        </div>
+        <img src="./img/Linesvg.svg" alt="" class="line-footer">
+        <div class="footer-socials">
+            <span>
+                Наши соцсети:
+            </span>
+            <div class="footer-img">
+                <a target="_blank" href="https://vk.com/mixzoystudio"><img src="./img/Vk.svg" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/mixzoy.studio/"><img src="./img/inst.svg" alt=""></a>
+                <a target="_blank" href="https://t.me/mixzoyagency"><img src="./img/telegram.svg" alt=""></a>
+            </div>
+        </div>
+        <img src="./img/Linesvg.svg" alt="" class="line-footer">
+        <div class="footer-contacts">
+            <span>
+                Контакты
+            </span>
+            <span>
+                E-Mail: mixzoystudio@mail.ru
+            </span>
+            <span>
+                telegram: @mixzoydesigner
+            </span>
+        </div>
+    </footer>
+    <footer class="footer-container-adaptive">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="./img/footer-logo.svg" alt="logo" class="header-logo-img">
+                <span class="header-logo-text footer-color">
+                    <span>MIXZOY</span>  DIGITAL AGENCY
+                </span>
+            </div>
+            <div class="footer-text">
+                Мы с гордостью заявляем, что уже более года успешно работаем в индустрии дизайна. За это время Mixzoy Studio смогла накопить ценный опыт и установить долгосрочные отношения с нашими доверенными клиентами.
+            </div>
+        </div>
+        <div class="footer-socials">
+            <span>
+                Наши соцсети:
+            </span>
+            <div class="footer-img">
+                <a target="_blank" href="https://vk.com/mixzoystudio"><img src="./img/Vk.svg" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/mixzoy.studio/"><img src="./img/inst.svg" alt=""></a>
+                <a target="_blank" href="https://t.me/mixzoyagency"><img src="./img/telegram.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-contacts">
+            <span>
+                Контакты
+            </span>
+            <span>
+                E-Mail: mixzoystudio@mail.ru
+            </span>
+            <span>
+                telegram: @mixzoydesigner
+            </span>
+            <div class="copyright">
+                © 2023 Created by Mixzoystudio
+            </div>
+        </div>
+
+        
+        
+    </footer>
+    <script>
+        let headerBgTitle = document.getElementById('main-logo-bg-scene');
+        let headerBgTitleInstance = new Parallax(headerBgTitle,{
+            
+        });
+        
+    </script>
+    <script defer src="./js/modal.js">
+
+    </script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>
